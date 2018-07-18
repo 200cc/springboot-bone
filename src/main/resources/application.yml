@@ -1,0 +1,11 @@
+spring.application.name: app-spring-bone
+server.port: 8080
+
+## 监控 actuator 相关
+management.endpoints.web.base-path: /ma
+## 监控的项目列表。 *表示开放所有项目的监控
+management.endpoints.web.exposure.include: "*"
+## 是否允许 /shutdown
+management.endpoint.shutdown.enabled: false
+## 是否显示 /health 细节
+management.endpoint.health.show-details: always
